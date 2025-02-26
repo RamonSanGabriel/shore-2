@@ -9,16 +9,26 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #024467;
+  background-color: #085b88;
   color: #fff;
   padding: 0.5rem 0;
   font-size: 0.75rem;
+  /* border: 1px solid red; */
 
   @media (width > 767px) {
     display: none;
   }
 }
+.navLink {
+  text-decoration: none;
+  color: #fff;
 
+  &:hover,
+  &:focus {
+    /* color: var(--PRIMARY-COLOR); */
+    color: #fff;
+  }
+}
 .menuIcons {
   width: 20px;
   height: 20px;
