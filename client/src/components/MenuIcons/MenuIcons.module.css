@@ -1,5 +1,5 @@
 .menuIconsWrapper {
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 .menuList {
   display: flex;
@@ -9,4 +9,17 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  background-color: #024467;
+  color: #fff;
+  padding: 0.5rem 0;
+  font-size: 0.75rem;
+
+  @media (width > 767px) {
+    display: none;
+  }
+}
+
+.menuIcons {
+  width: 20px;
+  height: 20px;
 }

@@ -52,6 +52,7 @@ body {
   margin: 0 auto;
   color: var(--PRIMARY-COLOR);
   background-color: #f5f5f5;
+  padding-bottom: 4rem;
 }
 h1 {
   margin-top: 5rem;
