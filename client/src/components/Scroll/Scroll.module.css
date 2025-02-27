@@ -1,0 +1,94 @@
+.container {
+  --d: 15s;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+  list-style: none;
+  -webkit-mask: linear-gradient(90deg, #0000, #000 5% 95%, #0000);
+
+  & div {
+    display: grid;
+    grid-area: 1/1;
+    grid-template-columns: 120px 1fr;
+    align-content: center;
+    gap: 10px;
+    background: #fff padding-box;
+    border-inline: 10px solid #0000;
+    animation: r var(--d) linear infinite;
+
+    & img {
+      width: 100%;
+      grid-row: span 2;
+    }
+
+    & * {
+      margin: 0;
+    }
+
+    & h.container {
+      --duration: 15s;
+      --num-slides: 3;
+
+      display: grid;
+      grid-template-columns: repeat(var(--num-slides), 1fr);
+      overflow: hidden;
+      list-style: none;
+      -webkit-mask: linear-gradient(90deg, #0000, #000 5% 95%, #0000);
+
+      & div {
+        display: grid;
+        grid-area: 1/1;
+        grid-template-columns: 120px 1fr;
+        align-content: center;
+        gap: 10px;
+        background: #fff padding-box;
+        border-inline: 10px solid #0000;
+        animation: rotate var(--duration) linear infinite;
+
+        & img {
+          width: 100%;
+          grid-row: span 2;
+        }
+
+        & * {
+          margin: 0;
+        }
+
+        & h3 {
+          margin-top: auto;
+        }
+      }
+    }
+
+    @for $i from 2 to (var(--num-slides) + 1) {
+      .container > div:nth-child(#{$i}) {
+        animation-delay: calc(#{(1 - $i) / var(--num-slides)}* var(--duration));
+      }
+    }
+    @keyframes rotate {
+      #{100/var(--num-slides)}% {
+        transform: translate(-100%);
+      }
+      #{100/var(--num-slides) + .01}% {
+        transform: translate((var(--num-slides) - 1) * 100%);
+      }
+    }
+     {
+      margin-top: auto;
+    }
+  }
+}
+@for $i from 2 to ($n + 1) {
+  .container > div:nth-child(#{$i}) {
+    animation-delay: calc(#{(1 - $i) / $n}* var(--d));
+  }
+}
+@keyframes r {
+  #{100/$n}% {
+    transform: translate(-100%);
+  }
+  #{100/$n + .01}% {
+    transform: translate(($n - 1) * 100%);
+  }
+}
