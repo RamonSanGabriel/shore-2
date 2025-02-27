@@ -6,8 +6,15 @@
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  padding: 1rem;
+  /* padding: 1rem; */
   /* margin: 1rem 0; */
+
+  @media (width > 767px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 1rem;
+  }
 }
 .galleryListContainer {
   /* display: flex; */
@@ -17,6 +24,10 @@
   width: 100%;
   border-radius: 8px;
   margin: 20px;
+
+  @media (width > 767px) {
+    margin: 20px 0;
+  }
 }
 .galleryItems {
   & h3 {
@@ -28,12 +39,13 @@
   }
   & img {
     width: 100%;
-    height: 400px;
+    height: 350px;
     object-fit: cover;
 
-    @media (width > 767px) {
-      width: 100%;
-    }
+    /* @media (width > 767px) {
+      width: 90%;
+      height: 250px;
+    } */
   }
   & p {
     padding: 0.5rem 0;

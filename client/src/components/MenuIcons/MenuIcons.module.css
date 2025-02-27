@@ -1,5 +1,6 @@
 .menuIconsWrapper {
   /* background-color: #fff; */
+  z-index: 100;
 }
 .menuList {
   display: flex;
