@@ -3,7 +3,7 @@ import css from './Gallery.module.css';
 
 const Gallery = () => {
   return (
-    <div className={css.galleryContainer}>
+    <div className={css.galleryWrapper}>
       <ul className={css.galleryList}>
         {gallery.map(({ id, title, image, description }) => (
           <div className={css.galleryListContainer} key={id}>
