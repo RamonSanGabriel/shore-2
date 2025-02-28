@@ -1,6 +1,6 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Services from '../../components/Services/Services';
-import Scroll from '../../components/Scroll/Scroll';
+// import Scroll from '../../components/Scroll/Scroll';
 
 const ServicesPage = () => {
   return (
@@ -9,7 +9,7 @@ const ServicesPage = () => {
         <title>Services</title>
       </Helmet>
       <Services />
-      <Scroll />
+      {/* <Scroll /> */}
     </HelmetProvider>
   );
 };

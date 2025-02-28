@@ -1,5 +1,8 @@
 .galleryWrapper {
+  --d: 15s;
+
   /* border: 1px solid black; */
+  display: flex;
   width: 90%;
   padding: 1rem;
   max-width: 1440px;
@@ -13,7 +16,8 @@
   );
 }
 .galleryList {
-  position: relative;
+  /* position: relative; */
+  display: flex;
   margin-inline: auto;
   gap: 20px;
   border-radius: 8px;
@@ -24,8 +28,8 @@
   cursor: pointer;
 }
 .galleryListContainer {
-  position: absolute;
-  left: 100%;
+  /* position: absolute; */
+  left: -100%;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   background-color: #fff;
   /* margin: 10px 0; */
@@ -40,8 +44,12 @@
   }
 }
 @keyframes swipe {
+  0% {
+    transform: translateX(0);
+  }
   100% {
-    left: -300px;
+    /* left: -300px; */
+    transform: translateX(-1024px);
   }
 }
 
