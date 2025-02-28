@@ -55,7 +55,7 @@
   bottom: -10px;
   left: 0;
   transition: all 250ms ease-out;
-  background-color: #0087ca;
+  background-color: hsl(200, 81%, 44%);
   /* background-color: var(--PRIMARY-COLOR); */
   border-radius: 8px;
 }
