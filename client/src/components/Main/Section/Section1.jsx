@@ -6,7 +6,7 @@ const Section1 = () => {
 
   return (
     <section className={css.section}>
-      <h4 className={css.title}>{title}</h4>
+      <h2 className={css.title}>{title}</h2>
       <img className={css.facade} src={image} />
       <p className={css.content}>{content}</p>
     </section>

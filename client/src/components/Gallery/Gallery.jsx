@@ -9,7 +9,7 @@ const Gallery = () => {
         {gallery.map(({ id, title, image, description }) => (
           <div className={css.galleryListContainer} key={id}>
             <li className={css.galleryItems}>
-              <h3>{title}</h3>
+              <h3 className={css.galleryTitle}>{title}</h3>
               <img src={image} alt={title} />
               <p>{description}</p>
             </li>
