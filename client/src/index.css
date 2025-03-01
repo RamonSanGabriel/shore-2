@@ -10,6 +10,8 @@
 :root {
   --PRIMARY-COLOR: #242424;
   --SECONDARY-COLOR: rgba(255, 255, 255, 0.87);
+  --TERTIARY-COLOR: #f7f7f7;
+  --FOURTH-COLOR: rgb(0, 120, 184); /*  #0077b6 */
 
   font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

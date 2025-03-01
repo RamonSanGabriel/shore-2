@@ -1,0 +1,19 @@
+.contactsWrapper {
+  width: 100%;
+  /* margin: 1rem 0 1rem; */
+  color: var(--PRIMARY-COLOR);
+  background-color: var(--SECONDARY-COLOR);
+  /* background-color: rgba(0, 118, 182, 0.691); */
+  transition: all 0.3s ease;
+}
+.contactsList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tel {
+  color: var(--PRIMARY-COLOR);
+}
+.tel:hover {
+  border-bottom: 1px solid red;
+}

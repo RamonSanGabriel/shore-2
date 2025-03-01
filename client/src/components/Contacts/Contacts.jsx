@@ -1,18 +1,24 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
+import { contacts } from '../../data/contacts';
+import css from './Contacts.module.css';
+import SocialMedia from '../SocialMedia/SocialMedia';
 
 const Contacts = () => {
   return (
-    <div>
+    <>
       <h1>Contacts Page</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
-        corrupti dolore quis iusto commodi ratione voluptatibus dolor, delectus
-        dolorum libero veritatis animi ipsum odit assumenda possimus eum dicta
-        pariatur consequuntur neque debitis ea temporibus qui perferendis aut!
-        Amet eaque ex nulla earum, quasi soluta consequuntur accusantium, odio
-        recusandae reprehenderit eum!
-      </p>
-    </div>
+      <div className={css.contactsWrapper}>
+        <ul className={css.contactsList}>
+          {contacts.map(({ id, title, icon: Icon, href }) => (
+            <li key={id}>
+              <h2>{title}</h2>
+              <p className={css.tel}>{href}</p>
+            </li>
+          ))}
+        </ul>
+        <SocialMedia />
+      </div>
+    </>
   );
 };
 
