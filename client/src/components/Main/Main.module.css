@@ -1,12 +1,4 @@
-/* $n:6; */
 .main {
+  /* max-width: 1440px; */
   max-width: 1024px;
-  /* margin-top: 5rem; */
-}
-.title {
-  /* font-size: 1.5rem; */
-  /* 
-  @media (width > 767px) {
-    font-size: 2rem;
-  } */
 }

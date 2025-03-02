@@ -1,9 +1,10 @@
 .section {
+  width: 100%;
   padding: 1rem;
   margin: 1rem 0;
   background-color: #fff;
   border-radius: 0.5rem;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); */
   /* @media (width > 767px) {
     padding: 2.5rem;
   } */

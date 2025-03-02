@@ -1,0 +1,51 @@
+.modal {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100vw;
+  padding: 3.5rem;
+  z-index: 500;
+
+  & h2 {
+    color: #fff;
+  }
+}
+
+& button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.modalHeader {
+  /* display: flex; */
+}
+.modalBody {
+  /* display: block; */
+  padding: 20px;
+  /* width: 80%; */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  background-color: rgba(206, 50, 50, 0.8);
+
+  z-index: 1200;
+}
