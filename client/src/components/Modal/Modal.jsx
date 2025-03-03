@@ -22,11 +22,8 @@ const Modal = ({ onClose }) => {
   return (
     !isModalOpen && (
       <div className={css.modal}>
-        <button onClick={() => onClose()}>&times;</button>
-        <div className={css.modalHeader}>
-          <h2>Modal</h2>
-        </div>
         <div className={css.modalBody}>
+          <button onClick={() => onClose()}>&times;</button>
           <p>Modal content</p>
           <img src={gallery1} />
           {/* `
