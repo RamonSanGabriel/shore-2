@@ -66,9 +66,9 @@
   /* display: inline-block;
   margin: 10px 0; */
 
-  & p {
-    margin: 0.5rem 0;
-  }
+  /* & p {
+    margin: 1rem 0;
+  } */
 }
 .galleryTitle {
   padding: 0.75rem 0;
