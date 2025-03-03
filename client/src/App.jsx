@@ -14,8 +14,8 @@ const ContactsPage = lazy(() => import('../pages/ContactsPage/ContactsPage'));
 
 const App = () => {
   return (
-    <div className={css.appWrapper}>
-      <Routes>
+    <Routes>
+      <div className={css.appWrapper}>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
@@ -24,8 +24,8 @@ const App = () => {
           <Route path="/contacts" element={<ContactsPage />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
-      </Routes>
-    </div>
+      </div>
+    </Routes>
   );
 };
 
