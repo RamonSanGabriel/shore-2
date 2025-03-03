@@ -18,10 +18,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<HomePage />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="services" element={<ServicesPage />} />
-          <Route path="gallery" element={<GalleryPage />} />
-          <Route path="contacts" element={<ContactsPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/contacts" element={<ContactsPage />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
       </Routes>
