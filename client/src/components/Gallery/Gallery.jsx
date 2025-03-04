@@ -14,7 +14,7 @@ const Gallery = () => {
     setCurrentIndex(id);
     setModal(true);
   };
-  console.log(handleOpenModal);
+  // console.log(handleOpenModal);
 
   const handleModalClose = (value) => {
     setModal(false);
