@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Home Page</title>
+        <title>Home</title>
       </Helmet>
       <Main />
       <Suspense fallback={<Loader />}>

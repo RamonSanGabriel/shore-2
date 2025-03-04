@@ -7,7 +7,8 @@ import { lazy } from 'react';
 const HomePage = lazy(() => import('../pages/HomePage/HomePage'));
 const AboutPage = lazy(() => import('../pages/AboutPage/AboutPage'));
 // prettier-ignore
-const ServicesPage = lazy(() =>import('../pages/ServicesPage/ServicesPage'));
+
+const ServicesPage = lazy(() =>import('../pages/ServicesPage/ServicesPage.jsx'));
 const GalleryPage = lazy(() => import('../pages/GalleryPage/GalleryPage'));
 // prettier-ignore
 const ContactsPage = lazy(() => import('../pages/ContactsPage/ContactsPage'));

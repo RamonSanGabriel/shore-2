@@ -1,5 +1,6 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import Services from '../../components/Services/Services';
+import Service from '../../components/Service/Service';
+
 // import Scroll from '../../components/Scroll/Scroll';
 
 const ServicesPage = () => {
@@ -8,7 +9,7 @@ const ServicesPage = () => {
       <Helmet>
         <title>Services</title>
       </Helmet>
-      <Services />
+      <Service />
       {/* <Scroll /> */}
     </HelmetProvider>
   );
