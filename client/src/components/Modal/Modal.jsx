@@ -1,41 +1,36 @@
 import css from './Modal.module.css';
-import { useState } from 'react';
 import { gallery } from '../../data/gallery';
-import gallery1 from '../../images/gallery/img1.jpg';
 
-const Modal = ({ onClose }) => {
-  const [currentImage, setCurrentImage] = useState(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const { image, id, title } = gallery;
-
-  // const [modalClose, setModalClose] = useState(true);
-  // useEffect(() => {
-  //   if (showModal) document.body.style.overflow = 'hidden';
-  //   else document.body.style.overflow = 'visible';
-  //   return () => {
-  //     document.body.style.overflow = 'unset';
-  //   };
-  // }, [showModal]);
-
+const Modal = ({ onClose, currentIndex }) => {
+  const handleKeyPress = (e) => {
+    if (e.key === 'Escape') {
+      onClose('close using ESC key');
+    }
+  };
   return (
-    !isModalOpen && (
-      <div className={css.modal}>
-        <div className={css.modalBody}>
-          <button onClick={() => onClose()}>&times;</button>
-          <p>Modal content</p>
-          <img src={gallery1} />
-          {/* `
-          <img
-            src="${image == null ? `https://placehold.co/400x600`:  `image`}"
-            alt="${title}"
-          />
-          ` */}
-          {/* <img src={image} /> */}
-        </div>
+    // !isModalOpen && (
+    // <div className={css.overlay}>
+    <div
+      className={css.overlay}
+      onKeyDown={() => handleKeyPress()}
+      onClick={(e) => {
+        if (e.target.className === css.overlay) {
+          console.log('clicked outside modal');
+        }
+      }}
+    >
+      {/* <div className={css.modal}> */}
+      <button className={css.closeBtn} onClick={() => onClose('close')}>
+        &times;
+      </button>
+      {/* <p>Modal content</p> */}
+      <div className={css.modalImage}>
+        <img src={gallery[currentIndex - 1].image} alt="gallery" />
       </div>
-    )
+      {/* </div> */}
+    </div>
+    // </div>
+    // )
   );
 };
 
