@@ -1,8 +1,8 @@
-import { Suspense } from 'react';
+// import { Suspense } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Outlet } from 'react-router-dom';
 import Main from '../../components/Main/Main';
-import Loader from '../../components/Loader/Loader';
+// import Loader from '../../components/Loader/Loader';
 
 const HomePage = () => {
   return (
@@ -11,9 +11,9 @@ const HomePage = () => {
         <title>Home</title>
       </Helmet>
       <Main />
-      <Suspense fallback={<Loader />}>
-        <Outlet />
-      </Suspense>
+      {/* <Suspense fallback={<Loader />}> */}
+      <Outlet />
+      {/* </Suspense> */}
     </HelmetProvider>
   );
 };
