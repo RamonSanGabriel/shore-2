@@ -3,6 +3,8 @@ import map from '../images/map.jpg';
 
 export const main = {
   id: 1,
+  header: 'Unit 1403 Tower 1',
+  subHeader: 'Property owner: KTSG',
   title: 'Facade',
   description: 'Main page',
   icon: 'home',
