@@ -5,8 +5,9 @@
   place-items: center;
   height: 100%;
   width: 100%;
-  padding: 1rem;
+  /* padding: 1rem; */
   background-color: rgba(0, 0, 0, 0.7);
+  /* pointer-events: none; */
 }
 
 .modal {
@@ -81,14 +82,28 @@
   }
 }
 
-.prevSlide {
+.prevSlide,
+.nextSlide {
   position: absolute;
-  left: 20px;
   fill: #fff;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+
+  &:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+}
+.prevSlide {
+  left: 20px;
 }
 
 .nextSlide {
-  position: absolute;
   right: 20px;
-  fill: #fff;
 }
