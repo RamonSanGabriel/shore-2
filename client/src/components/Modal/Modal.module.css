@@ -2,32 +2,26 @@
   position: fixed;
   top: 0;
   left: 0;
-  place-content: center;
+  place-items: center;
   height: 100%;
   width: 100%;
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal {
-  max-width: 1024px;
   background-color: #fff;
   padding: 1rem;
   width: 80%;
   height: 70%;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  translate: 0 0;
-  transition-duration: 950ms;
-  overflow: hidden;
 
-  @starting-style {
-    translate: 0 -25vh;
-    opacity: 0;
-  }
+  overflow: hidden;
 }
 
 .modalImage {
+  max-width: 1024px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -35,12 +29,25 @@
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
   overflow: hidden;
+  translate: 0 0;
+  transition-duration: 950ms;
 
   @media (width > 767px) {
     width: 70%;
     height: 90%;
     margin: 0 auto;
+    padding: 2rem;
+  }
+
+  @starting-style {
+    translate: 0 -25vh;
+    opacity: 0;
   }
 
   & img {
