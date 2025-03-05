@@ -20,11 +20,11 @@ const Modal = ({ onClose, currentIndex }) => {
       }}
     >
       {/* <div className={css.modal}> */}
-      <button className={css.closeBtn} onClick={() => onClose('close')}>
-        &times;
-      </button>
-      {/* <p>Modal content</p> */}
       <div className={css.modalImage}>
+        <button className={css.closeBtn} onClick={() => onClose('close')}>
+          &times;
+        </button>
+        {/* <p>Modal content</p> */}
         <img src={gallery[currentIndex - 1].image} alt="gallery" />
       </div>
       {/* </div> */}
