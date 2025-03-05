@@ -4,18 +4,18 @@ import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 import { IoIosArrowDropleft, IoIosArrowDropright } from 'react-icons/io';
 
 const Modal = ({ onClose, currentIndex }) => {
-  const handleKeyPress = (e) => {
-    if (e.key === 'Escape') {
-      onClose('close using ESC key');
-    }
-  };
+  // const handleKeyPress = (e) => {
+  //   if (e.key === 'Escape') {
+  //     onClose('close using ESC key');
+  //   }
+  // };
   return (
     <div
       className={css.overlay}
-      onKeyDown={() => handleKeyPress()}
+      // onKeyDown={() => handleKeyPress()}
       onClick={(e) => {
         if (e.target.className === css.overlay) {
-          console.log('clicked outside modal');
+          onClose('clicked outside modal');
         }
       }}
     >
