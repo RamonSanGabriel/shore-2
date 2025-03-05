@@ -80,3 +80,15 @@
     outline: none;
   }
 }
+
+.prevSlide {
+  position: absolute;
+  left: 20px;
+  fill: #fff;
+}
+
+.nextSlide {
+  position: absolute;
+  right: 20px;
+  fill: #fff;
+}
