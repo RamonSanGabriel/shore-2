@@ -8,8 +8,6 @@ const Modal = ({ onClose, currentIndex }) => {
     }
   };
   return (
-    // !isModalOpen && (
-    // <div className={css.overlay}>
     <div
       className={css.overlay}
       onKeyDown={() => handleKeyPress()}
@@ -24,13 +22,9 @@ const Modal = ({ onClose, currentIndex }) => {
         <button className={css.closeBtn} onClick={() => onClose('close')}>
           &times;
         </button>
-        {/* <p>Modal content</p> */}
         <img src={gallery[currentIndex - 1].image} alt="gallery" />
       </div>
-      {/* </div> */}
     </div>
-    // </div>
-    // )
   );
 };
 

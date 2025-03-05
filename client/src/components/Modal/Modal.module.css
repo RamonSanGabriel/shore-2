@@ -2,9 +2,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
   place-content: center;
   height: 100%;
   width: 100%;
@@ -28,73 +25,25 @@
     translate: 0 -25vh;
     opacity: 0;
   }
-
-  /*   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 600; */
-}
-.closeBtn {
-  display: block;
-  /* margin-left: auto; */
-  /* font-weight: bold; */
-  font-size: 1.5rem;
-  /* width: 100%; */
-  /* height: 40px; */
-  border-radius: 8px;
-  border: none;
-  padding: 0.25rem 1rem;
-  background-color: rgb(204, 204, 204, 0.9);
-  /* opacity: 1; */
-  transition: all 250ms ease-in-out;
-  /* transition-property: background-color, opacity;
-  transition-duration: 250ms; */
-
-  &:hover {
-    /* background-color: transparent; */
-    opacity: 0.8;
-    cursor: pointer;
-    /* outline: none; */
-    /* border: none;  */
-  }
-  &:focus,
-  &:focus-visible {
-    /* outline: 4px auto -webkit-focus-ring-color; */
-    outline: none;
-  }
 }
 
 .modalImage {
-  /* position: relative; */
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-  align-items: self-start;
-  /* gap: 10px; */
-  top: 10;
-  left: 10;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  /* background-color: rgb(204, 204, 204, 0.9); */
+  overflow: hidden;
 
   @media (width > 767px) {
     width: 70%;
     height: 90%;
     margin: 0 auto;
-
-    /* padding: 8rem; */
   }
 
   & img {
-    /* position: relative; */
-    display: inline-block;
     object-fit: contain;
     width: 100%;
     border-radius: 8px;
@@ -102,5 +51,25 @@
     @media (width > 767px) {
       height: 100%;
     }
+  }
+}
+.closeBtn {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  border: none;
+  padding: 0.25rem 1rem;
+  background-color: rgb(204, 204, 204, 0.9);
+  transition: all 250ms ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  &:focus,
+  &:focus-visible {
+    outline: none;
   }
 }
