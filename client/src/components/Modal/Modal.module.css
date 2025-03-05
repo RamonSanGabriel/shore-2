@@ -61,17 +61,26 @@
     }
   }
 }
+.modalImageContainer {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
 .closeBtn {
   display: block;
   margin-left: auto;
+  padding: 0.25rem 0.5rem;
+
   margin-bottom: 5px;
-  font-size: 1.5rem;
   border-radius: 8px;
   border: none;
-  padding: 0.25rem 1rem;
   background-color: rgb(204, 204, 204, 0.9);
   transition: all 250ms ease-in-out;
 
+  @media (width > 767px) {
+    font-size: 1.5rem;
+    padding: 0.25rem 1rem;
+  }
   &:hover {
     opacity: 0.8;
     cursor: pointer;
@@ -86,11 +95,15 @@
 .nextSlide {
   position: absolute;
   fill: #fff;
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
   transition: all 250ms ease-in-out;
 
+  @media (width > 767px) {
+    width: 50px;
+    height: 50px;
+  }
   &:hover {
     opacity: 0.6;
     cursor: pointer;

@@ -21,12 +21,13 @@ const Modal = ({ onClose, currentIndex }) => {
     >
       {/* <div className={css.modal}> */}
       <div className={css.modalImage}>
-        <button className={css.closeBtn} onClick={() => onClose('close')}>
-          &times;
-        </button>
         <IoIosArrowDropleft className={css.prevSlide} />
-
-        <img src={gallery[currentIndex - 1].image} alt="gallery" />
+        <div className={css.modalImageContainer}>
+          <button className={css.closeBtn} onClick={() => onClose('close')}>
+            &times;
+          </button>
+          <img src={gallery[currentIndex - 1].image} alt="gallery" />
+        </div>
         <IoIosArrowDropright className={css.nextSlide} />
       </div>
     </div>
