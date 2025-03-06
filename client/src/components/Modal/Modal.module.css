@@ -55,7 +55,7 @@
   flex-direction: column;
   align-items: center;
   /* padding: 1rem; */
-  width: 100%;
+  width: fit-content;
   /* height: 100%; */
 
   & img {
@@ -68,10 +68,8 @@
 .closeBtn {
   display: block;
   margin-left: auto;
-
   font-size: 1.5rem;
   padding: 0.25rem 1rem;
-
   margin-bottom: 5px;
   border-radius: 8px;
   border: none;
