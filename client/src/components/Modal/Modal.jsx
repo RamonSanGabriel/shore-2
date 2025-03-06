@@ -18,6 +18,10 @@ const Modal = ({ onClose, currentIndex, prevSlide, nextSlide }) => {
         className={css.prevSlide}
         onClick={() => prevSlide('prevSlide button')}
       />
+      <IoIosArrowDropright
+        className={css.nextSlide}
+        onClick={() => nextSlide('nextSlide button')}
+      />
       <div className={css.modalImage}>
         <div className={css.modalImageContainer}>
           <button className={css.closeBtn} onClick={() => onClose('close')}>
@@ -26,10 +30,6 @@ const Modal = ({ onClose, currentIndex, prevSlide, nextSlide }) => {
           <img src={gallery[currentIndex].image} alt="gallery" />
         </div>
       </div>
-      <IoIosArrowDropright
-        className={css.nextSlide}
-        onClick={() => nextSlide('nextSlide button')}
-      />
     </div>
   );
 };
