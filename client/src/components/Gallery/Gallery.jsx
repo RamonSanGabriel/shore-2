@@ -10,15 +10,21 @@ const Gallery = () => {
   const { id, image } = gallery;
 
   const handleOpenModal = (id) => {
-    setCurrentIndex(id);
+    setCurrentIndex(id - 1);
     setOpenModal(true);
   };
 
-  const handleModalClose = (id) => {
+  const handleModalClose = () => {
     setOpenModal(false);
-    setCurrentIndex(id);
   };
 
+  const prevSlide = () => {
+    if (currentIndex === 1) {
+      setCurrentIndex(gallery.length - 1);
+    } else {
+      setCurrentIndex(currentIndex - 1);
+    }
+  };
   return (
     <>
       {openModal ? (
@@ -29,6 +35,7 @@ const Gallery = () => {
           currentIndex={currentIndex}
           setOpenModal={handleModalClose}
           setCurrentIndex={setCurrentIndex}
+          prevSlide={prevSlide}
         />
       ) : (
         // <div className={css.modal}>

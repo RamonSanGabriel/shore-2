@@ -69,7 +69,9 @@
 .closeBtn {
   display: block;
   margin-left: auto;
-  padding: 0.25rem 0.5rem;
+
+  font-size: 1.5rem;
+  padding: 0.25rem 1rem;
 
   margin-bottom: 5px;
   border-radius: 8px;
@@ -78,8 +80,6 @@
   transition: all 250ms ease-in-out;
 
   @media (width > 767px) {
-    font-size: 1.5rem;
-    padding: 0.25rem 1rem;
   }
   &:hover {
     opacity: 0.8;
@@ -114,9 +114,9 @@
   }
 }
 .prevSlide {
-  left: 20px;
+  left: 40px;
 }
 
 .nextSlide {
-  right: 20px;
+  right: 40px;
 }
