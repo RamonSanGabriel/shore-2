@@ -20,7 +20,7 @@ export const gallery = [
   {
     id: 2,
     title: 'Image 2',
-    image: gallery10,
+    image: gallery8,
     description: 'Image description',
   },
   {
@@ -53,25 +53,25 @@ export const gallery = [
     image: gallery7,
     description: 'Image description',
   },
-  {
+  /*   {
     id: 8,
     title: 'Image 8',
     image: gallery8,
     description: 'Image description',
-  },
+  }, */
   {
     id: 9,
     title: 'Image 9',
     image: gallery9,
     description: 'Image description',
   },
-  /*   {
+  {
     id: 10,
     title: 'Image 10',
     image: gallery10,
     description: 'Image description',
   },
-  {
+  /*  {
     id: 11,
     title: 'Image 11',
     image: gallery11,
