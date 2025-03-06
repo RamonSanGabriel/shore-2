@@ -1,5 +1,5 @@
 import { FaPhoneAlt, FaShareAlt } from 'react-icons/fa';
-// import SocialMedia from '../components/SocialMedia/SocialMedia';
+import SocialMedia from '../components/SocialMedia/SocialMedia';
 
 export const contacts = [
   {
@@ -18,5 +18,11 @@ export const contacts = [
         +63 956 170 5622
       </a>
     ),
+  },
+  {
+    id: 2,
+    icon: FaShareAlt,
+    description: 'Social Profiles',
+    child: <SocialMedia />,
   },
 ];

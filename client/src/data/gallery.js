@@ -1,6 +1,6 @@
 import gallery1 from '../images/gallery/img1.jpg';
-import gallery2 from '../images/gallery/img2.jpg';
-import gallery3 from '../images/gallery/img3.jpg';
+// import gallery2 from '../images/gallery/img2.jpg';
+// import gallery3 from '../images/gallery/img3.jpg';
 import gallery4 from '../images/gallery/img4.jpg';
 import gallery5 from '../images/gallery/img5.jpg';
 import gallery6 from '../images/gallery/img6.jpg';
@@ -20,13 +20,13 @@ export const gallery = [
   {
     id: 2,
     title: 'Image 2',
-    image: gallery2,
+    image: gallery10,
     description: 'Image description',
   },
   {
     id: 3,
     title: 'Image 3',
-    image: gallery3,
+    image: gallery11,
     description: 'Image description',
   },
   {
@@ -65,7 +65,7 @@ export const gallery = [
     image: gallery9,
     description: 'Image description',
   },
-  {
+  /*   {
     id: 10,
     title: 'Image 10',
     image: gallery10,
@@ -76,5 +76,5 @@ export const gallery = [
     title: 'Image 11',
     image: gallery11,
     description: 'Image description',
-  },
+  }, */
 ];

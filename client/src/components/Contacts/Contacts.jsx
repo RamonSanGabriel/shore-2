@@ -17,6 +17,26 @@ const Contacts = () => {
           ))}
         </ul>
         <SocialMedia />
+
+        <form action="https://getform.io/f/ayvpgdpb" method="POST">
+          <div className={css.formWrapper}>
+            <label className={css.formField}>
+              <input className={css.formInput} />
+              <span className={css.formLabel}>Name*</span>
+            </label>
+          </div>
+          <div className={css.formWrapper}>
+            <label className={css.formField}>
+              <input className={css.formInput} />
+              <span className={css.formLabel}>Email*</span>
+            </label>
+          </div>
+          <label>
+            <textarea></textarea>
+            <span>Message</span>
+          </label>
+          <button>Send</button>
+        </form>
       </div>
     </>
   );
