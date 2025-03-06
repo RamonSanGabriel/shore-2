@@ -38,8 +38,10 @@
   /* margin: 0 auto; */
 }
 .formWrapper {
-  text-align: left;
+  /* text-align: left; */
+  align-items: center;
   margin: 1rem 0;
+  width: 100%;
 }
 .formField {
   display: block;
@@ -48,6 +50,16 @@
   display: block;
   margin: 0.5rem 0;
   font-weight: 700;
+  text-align: left;
+
+  @media (width > 767px) {
+    text-align: center;
+  }
+
+  @media (width > 1023px) {
+    padding: 0 4.5rem;
+    text-align: left;
+  }
 }
 .formInput,
 .textArea {
