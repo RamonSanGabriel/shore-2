@@ -9,7 +9,7 @@
   /* pointer-events: none; */
 }
 
-.modal {
+/* .modal {
   background-color: #fff;
   padding: 5rem;
   width: 80%;
@@ -17,7 +17,7 @@
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   overflow: hidden;
-}
+} */
 
 .modalImage {
   max-width: 1024px;

@@ -4,7 +4,7 @@ import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 import { IoIosArrowDropleft, IoIosArrowDropright } from 'react-icons/io';
 
 const Modal = ({ onClose, currentIndex, prevSlide, nextSlide }) => {
-  const { image } = gallery;
+  // const { image } = gallery;
   return (
     <div
       className={css.overlay}
