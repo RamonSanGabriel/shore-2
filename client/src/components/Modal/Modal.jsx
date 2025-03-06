@@ -1,6 +1,7 @@
 import css from './Modal.module.css';
 import { gallery } from '../../data/gallery';
-import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
+import { IoIosCloseCircleOutline } from 'react-icons/io';
+
 import { IoIosArrowDropleft, IoIosArrowDropright } from 'react-icons/io';
 
 const Modal = ({ onClose, currentIndex, prevSlide, nextSlide }) => {
@@ -24,9 +25,12 @@ const Modal = ({ onClose, currentIndex, prevSlide, nextSlide }) => {
           onClick={() => nextSlide('nextSlide button')}
         />
         <div className={css.modalImageContainer}>
-          <button className={css.closeBtn} onClick={() => onClose('close')}>
-            &times;
-          </button>
+          {/* <button> */}
+          <IoIosCloseCircleOutline
+            className={css.closeBtn}
+            onClick={() => onClose('close')}
+          />
+          {/* </button> */}
           <img src={gallery[currentIndex].image} alt="gallery" />
         </div>
       </div>
