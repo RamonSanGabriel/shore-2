@@ -17,27 +17,34 @@ const Contacts = () => {
           ))}
         </ul>
         <SocialMedia />
-
-        <form action="https://getform.io/f/ayvpgdpb" method="POST">
-          <div className={css.formWrapper}>
-            <label className={css.formField}>
-              <input className={css.formInput} />
-              <span className={css.formLabel}>Name*</span>
-            </label>
-          </div>
-          <div className={css.formWrapper}>
-            <label className={css.formField}>
-              <input className={css.formInput} />
-              <span className={css.formLabel}>Email*</span>
-            </label>
-          </div>
-          <label>
-            <textarea></textarea>
-            <span>Message</span>
-          </label>
-          <button>Send</button>
-        </form>
       </div>
+      {/* <div className={css.formWrapper}> */}
+      <form
+        className={css.form}
+        action="https://getform.io/f/ayvpgdpb"
+        method="POST"
+      >
+        <div className={css.formWrapper}>
+          <label className={css.formField}>
+            <span className={css.formLabel}>Name*</span>
+            <input className={css.formInput} placeholder="Enter full name" />
+          </label>
+        </div>
+        <div className={css.formWrapper}>
+          <label className={css.formField}>
+            <span className={css.formLabel}>Email*</span>
+            <input className={css.formInput} placeholder="example@email.com" />
+          </label>
+        </div>
+        <div className={css.formWrapper}>
+          <label className={css.formField}>
+            <span className={css.formLabel}>Message</span>
+            <textarea className={css.textArea} rows={10} cols={6}></textarea>
+          </label>
+          <button className={css.formBtn}>Send</button>
+        </div>
+      </form>
+      {/* </div> */}
     </>
   );
 };
