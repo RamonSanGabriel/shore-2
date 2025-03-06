@@ -1,11 +1,9 @@
 import css from './Modal.module.css';
 import { gallery } from '../../data/gallery';
-import { IoIosCloseCircleOutline } from 'react-icons/io';
-
+import { IoCloseSharp } from 'react-icons/io5';
 import { IoIosArrowDropleft, IoIosArrowDropright } from 'react-icons/io';
 
 const Modal = ({ onClose, currentIndex, prevSlide, nextSlide }) => {
-  // const { image } = gallery;
   return (
     <div
       className={css.overlay}
@@ -26,7 +24,7 @@ const Modal = ({ onClose, currentIndex, prevSlide, nextSlide }) => {
         />
         <div className={css.modalImageContainer}>
           {/* <button> */}
-          <IoIosCloseCircleOutline
+          <IoCloseSharp
             className={css.closeBtn}
             onClick={() => onClose('close')}
           />
