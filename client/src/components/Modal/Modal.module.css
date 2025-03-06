@@ -92,7 +92,7 @@
 .prevSlide,
 .nextSlide {
   position: absolute;
-  top: 52%;
+  top: 50%;
   z-index: 400;
   /* transform: translate(-50%, -50%); */
   fill: #fff;
@@ -115,7 +115,7 @@
   }
 }
 .prevSlide {
-  left: 40px;
+  left: 20px;
   /* left: 50%; */
 }
 
