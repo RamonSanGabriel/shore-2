@@ -94,7 +94,7 @@
   position: absolute;
   top: 52%;
   z-index: 400;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   fill: #fff;
   width: 40px;
   height: 40px;
