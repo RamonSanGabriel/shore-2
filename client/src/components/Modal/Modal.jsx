@@ -3,7 +3,7 @@ import { gallery } from '../../data/gallery';
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 import { IoIosArrowDropleft, IoIosArrowDropright } from 'react-icons/io';
 
-const Modal = ({ onClose, currentIndex, prevSlide }) => {
+const Modal = ({ onClose, currentIndex, prevSlide, nextSlide }) => {
   const { image } = gallery;
   return (
     <div
@@ -15,14 +15,20 @@ const Modal = ({ onClose, currentIndex, prevSlide }) => {
       }}
     >
       <div className={css.modalImage}>
-        <IoIosArrowDropleft className={css.prevSlide} onClick={prevSlide} />
+        <IoIosArrowDropleft
+          className={css.prevSlide}
+          onClick={() => prevSlide('prevSlide button')}
+        />
         <div className={css.modalImageContainer}>
           <button className={css.closeBtn} onClick={() => onClose('close')}>
             &times;
           </button>
           <img src={gallery[currentIndex].image} alt="gallery" />
         </div>
-        <IoIosArrowDropright className={css.nextSlide} />
+        <IoIosArrowDropright
+          className={css.nextSlide}
+          onClick={() => nextSlide('nextSlide button')}
+        />
       </div>
     </div>
   );

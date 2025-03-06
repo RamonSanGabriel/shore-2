@@ -5,7 +5,7 @@ import Modal from '../Modal/Modal';
 
 const Gallery = () => {
   const [openModal, setOpenModal] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState('');
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const { id, image } = gallery;
 
@@ -19,10 +19,17 @@ const Gallery = () => {
   };
 
   const prevSlide = () => {
-    if (currentIndex === 1) {
+    if (currentIndex === 0) {
       setCurrentIndex(gallery.length - 1);
     } else {
       setCurrentIndex(currentIndex - 1);
+    }
+  };
+  const nextSlide = () => {
+    if (currentIndex === gallery.length - 1) {
+      setCurrentIndex(0);
+    } else {
+      setCurrentIndex(currentIndex + 1);
     }
   };
   return (
@@ -36,17 +43,9 @@ const Gallery = () => {
           setOpenModal={handleModalClose}
           setCurrentIndex={setCurrentIndex}
           prevSlide={prevSlide}
+          nextSlide={nextSlide}
         />
       ) : (
-        // <div className={css.modal}>
-        //   <div className={css.modalBody}>
-        //     <button onClick={() => handleModalClose()}>&times;</button>
-        //     <p>Modal content</p>
-        //     <div className={css.modalImage}>
-        //       <img src={gallery[currentIndex - 1].image} alt="gallery" />
-        //     </div>
-        //   </div>
-        // </div>
         <div className={css.galleryWrapper}>
           <ul className={css.galleryList}>
             {gallery &&
