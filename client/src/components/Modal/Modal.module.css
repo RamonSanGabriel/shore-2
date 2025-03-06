@@ -99,7 +99,7 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-  /* transition: all 250ms ease-in-out; */
+  transition: all 250ms ease-in-out;
 
   @media (width > 767px) {
     width: 50px;
@@ -107,7 +107,7 @@
   }
   &:hover {
     opacity: 0.6;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
   &:focus,
   &:focus-visible {

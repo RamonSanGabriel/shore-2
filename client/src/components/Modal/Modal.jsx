@@ -14,15 +14,15 @@ const Modal = ({ onClose, currentIndex, prevSlide, nextSlide }) => {
         }
       }}
     >
-      <IoIosArrowDropleft
-        className={css.prevSlide}
-        onClick={() => prevSlide('prevSlide button')}
-      />
-      <IoIosArrowDropright
-        className={css.nextSlide}
-        onClick={() => nextSlide('nextSlide button')}
-      />
       <div className={css.modalImage}>
+        <IoIosArrowDropleft
+          className={css.prevSlide}
+          onClick={() => prevSlide('prevSlide button')}
+        />
+        <IoIosArrowDropright
+          className={css.nextSlide}
+          onClick={() => nextSlide('nextSlide button')}
+        />
         <div className={css.modalImageContainer}>
           <button className={css.closeBtn} onClick={() => onClose('close')}>
             &times;
