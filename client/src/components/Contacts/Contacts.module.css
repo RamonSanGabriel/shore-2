@@ -1,6 +1,7 @@
 .contactsWrapper {
   width: 100%;
   padding: 1rem;
+  gap: 10px;
   /* background-color: var(--SECONDARY-COLOR); */
   background-color: rgba(0, 118, 182, 0.122);
   display: grid;
@@ -53,7 +54,10 @@
   padding: 1rem;
   outline: none;
   border: none;
+  border-radius: 0.5rem;
   width: 100%;
+  font-family: monospace, Roboto;
+  font-size: 1rem;
 
   @media (width > 767px) {
     width: 80%;

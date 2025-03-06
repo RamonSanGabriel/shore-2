@@ -39,7 +39,12 @@ const Contacts = () => {
         <div className={css.formWrapper}>
           <label className={css.formField}>
             <span className={css.formLabel}>Message</span>
-            <textarea className={css.textArea} rows={10} cols={6}></textarea>
+            <textarea
+              className={css.textArea}
+              rows={10}
+              cols={6}
+              placeholder="we love to hear from you..."
+            ></textarea>
           </label>
           <button className={css.formBtn}>Send</button>
         </div>
