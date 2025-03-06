@@ -21,19 +21,31 @@ const Contacts = () => {
       {/* <div className={css.formWrapper}> */}
       <form
         className={css.form}
-        action="https://getform.io/f/ayvpgdpb"
+        action="https://getform.io/f/akkypzma"
         method="POST"
       >
         <div className={css.formWrapper}>
           <label className={css.formField}>
             <span className={css.formLabel}>Name*</span>
-            <input className={css.formInput} placeholder="Enter full name" />
+            <input
+              className={css.formInput}
+              type="text"
+              name="name"
+              placeholder="John Doe"
+              required
+            />
           </label>
         </div>
         <div className={css.formWrapper}>
           <label className={css.formField}>
             <span className={css.formLabel}>Email*</span>
-            <input className={css.formInput} placeholder="example@email.com" />
+            <input
+              className={css.formInput}
+              type="email"
+              name="email"
+              placeholder="john_doe@email.com"
+              required
+            />
           </label>
         </div>
         <div className={css.formWrapper}>
@@ -43,10 +55,15 @@ const Contacts = () => {
               className={css.textArea}
               rows={10}
               cols={6}
-              placeholder="we love to hear from you..."
+              type="text"
+              name="message"
+              placeholder="We love to hear from you..."
+              required
             ></textarea>
           </label>
-          <button className={css.formBtn}>Send</button>
+          <button className={css.formBtn} type="submit">
+            Send
+          </button>
         </div>
       </form>
       {/* </div> */}
