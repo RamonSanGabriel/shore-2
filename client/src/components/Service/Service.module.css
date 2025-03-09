@@ -1,0 +1,25 @@
+.serviceWrapper {
+  h1 {
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    text-align: justify;
+    margin: 1rem 0;
+  }
+}
+
+.serviceList {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  text-align: left;
+  list-style: square;
+  /* list-style-position: inside; */
+  margin: 0 0.5rem;
+
+  p {
+    margin-bottom: 0;
+  }
+}

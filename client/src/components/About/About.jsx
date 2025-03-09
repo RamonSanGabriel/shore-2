@@ -1,12 +1,13 @@
-import React from 'react';
+import css from './About.module.css';
 import { about } from '../../data/about';
 
 const About = () => {
   const { title, description } = about;
   return (
-    <div>
+    <div className={css.aboutWrapper}>
       <h1>{title}</h1>
-      <p>{description}</p>
+      <hr />
+      <p className={css.aboutDescription}>{description}</p>
     </div>
   );
 };
