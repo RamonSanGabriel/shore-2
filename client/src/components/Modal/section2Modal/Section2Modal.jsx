@@ -2,7 +2,7 @@ import { vicinityMap } from '../../../data/main';
 import css from './Section2Modal.module.css';
 import { IoCloseSharp } from 'react-icons/io5';
 
-const Section2Modal = ({ onClose, setModalOpen }) => {
+const Section2Modal = ({ onClose }) => {
   const { imageMap } = vicinityMap;
   return (
     <div className={css.overlay}>
