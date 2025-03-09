@@ -40,7 +40,7 @@ const Gallery = () => {
           id={id}
           image={image}
           currentIndex={currentIndex}
-          setOpenModal={handleModalClose}
+          setOpenModal={handleOpenModal}
           setCurrentIndex={setCurrentIndex}
           prevSlide={prevSlide}
           nextSlide={nextSlide}

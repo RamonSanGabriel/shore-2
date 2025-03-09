@@ -35,6 +35,7 @@ h3 {
   width: 100%;
   border-radius: 8px;
   object-fit: contain;
+  cursor: pointer;
 }
 .content {
   margin: 1rem 0;
