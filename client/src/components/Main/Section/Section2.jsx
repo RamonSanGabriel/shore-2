@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { features, storeys, vicinityMap } from '../../../data/main';
 import css from './Section.module.css';
-import Section2Modal from '../../Modal/Section2Modal/Section2Modal';
+import Section2Modal from '../../Modal/section2Modal/section2Modal';
 
 const Section2 = () => {
   const [openModal, setOpenModal] = useState(false);
