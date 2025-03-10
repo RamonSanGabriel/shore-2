@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { features, storeys, vicinityMap } from '../../../data/main';
+import { vicinityMap } from '../../../data/main';
 import css from './Section.module.css';
 
 const Section2 = () => {

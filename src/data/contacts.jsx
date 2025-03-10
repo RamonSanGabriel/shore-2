@@ -12,18 +12,7 @@ export const contacts = [
     icon: FaPhoneAlt,
     message: 'Call us',
     title: 'Mobile',
-    href: (
-      <a
-        // style={{
-        //   textDecoration: 'none',
-        //   color: '#000000',
-        //   fontSize: '20px',
-        // }}
-        href="tel:+639561705622"
-      >
-        +63 956 170 5622
-      </a>
-    ),
+    href: <a href="tel:+639561705622">+63 956 170 5622</a>,
   },
   {
     id: 2,

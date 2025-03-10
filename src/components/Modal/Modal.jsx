@@ -23,12 +23,10 @@ const Modal = ({ onClose, currentIndex, prevSlide, nextSlide }) => {
           onClick={() => nextSlide('nextSlide button')}
         />
         <div className={css.modalImageContainer}>
-          {/* <button> */}
           <IoCloseSharp
             className={css.closeBtn}
             onClick={() => onClose('close')}
           />
-          {/* </button> */}
           <img src={gallery[currentIndex].image} alt="gallery" />
         </div>
       </div>

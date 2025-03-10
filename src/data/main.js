@@ -71,6 +71,7 @@ export const services = {
   c: 'Front desk area',
   d: 'Property management services',
 };
+
 export const amenities = {
   title: 'Amenities',
   a: 'Swimming pool',

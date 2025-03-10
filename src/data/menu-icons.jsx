@@ -14,24 +14,24 @@ export const menuIcons = [
     id: 2,
     icon: ImAccessibility,
     label: 'About',
-    path: '/about',
+    path: 'about',
   },
   {
     id: 3,
     icon: MdMiscellaneousServices,
     label: 'Services',
-    path: '/services',
+    path: 'services',
   },
   {
     id: 4,
     icon: TfiGallery,
     label: 'Gallery',
-    path: '/gallery',
+    path: 'gallery',
   },
   {
     id: 5,
     icon: RiContactsBook3Fill,
     label: 'Contacts',
-    path: '/contacts',
+    path: 'contacts',
   },
 ];

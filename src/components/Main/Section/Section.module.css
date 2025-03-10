@@ -4,16 +4,10 @@
   margin: 1rem 0;
   background-color: #fff;
   border-radius: 0.5rem;
-  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); */
-  /* @media (width > 767px) {
-    padding: 2.5rem;
-  } */
 }
 .title {
-  /* font-size: 1.15rem; */
   font-weight: 700;
   text-transform: uppercase;
-  /* padding-bottom: 1rem; */
   text-align: left;
 }
 h3 {
@@ -54,10 +48,8 @@ h3 {
   text-align: left;
   list-style: inside;
   color: #777777;
-  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
 
   & span {
-    /* font-style: italic; */
     font-weight: 600;
   }
 }

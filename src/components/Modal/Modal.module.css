@@ -6,18 +6,7 @@
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  /* pointer-events: none; */
 }
-
-/* .modal {
-  background-color: #fff;
-  padding: 5rem;
-  width: 80%;
-  height: 70%;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  overflow: hidden;
-} */
 
 .modalImage {
   max-width: 1024px;
@@ -38,8 +27,6 @@
   transition-duration: 950ms;
 
   @media (width > 767px) {
-    /* width: 70%;
-    height: 80%; */
     margin: 0 auto;
     padding: 2rem;
   }
@@ -54,13 +41,10 @@
   justify-content: flex-end;
   flex-direction: column;
   align-items: center;
-  /* padding: 1rem; */
   width: fit-content;
-  /* height: 100%; */
 
   & img {
     object-fit: contain;
-    /* height: 100%; */
     width: 100%;
     max-height: 600px;
     border-radius: 8px;
@@ -90,7 +74,6 @@
   position: absolute;
   top: 50%;
   z-index: 400;
-  /* transform: translate(-50%, -50%); */
   fill: #fff;
   width: 40px;
   height: 40px;
@@ -104,10 +87,6 @@
   &:hover {
     opacity: 0.7;
   }
-  /* &:focus,
-  &:focus-visible {
-    outline: none;
-  } */
 }
 .prevSlide {
   left: 20px;

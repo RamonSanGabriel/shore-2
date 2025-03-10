@@ -1,4 +1,3 @@
-// import { RotatingLines } from 'react-loader-spinner';
 import { BeatLoader } from 'react-spinners';
 import css from './Loader.module.css';
 
