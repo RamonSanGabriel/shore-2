@@ -13,7 +13,9 @@ const Service = () => {
         {unitDescription.map(({ id, unitDescription }) => (
           <div key={id}>
             <li className={css.serviceList}>
-              <p>{unitDescription}</p>
+              <span className={css.serviceListDescription}>
+                {unitDescription}
+              </span>
             </li>
           </div>
         ))}

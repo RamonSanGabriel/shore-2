@@ -19,7 +19,7 @@ export const unitDescription = [
   },
   {
     id: 4,
-    unitDescription: 'Customized bedroom with industrial lighting fixtures',
+    unitDescription: 'Customized bedroom',
   },
   {
     id: 5,
@@ -84,5 +84,9 @@ export const unitDescription = [
   {
     id: 20,
     unitDescription: 'Customized wardrobe',
+  },
+  {
+    id: 21,
+    unitDescription: 'Industrial lighting fixture',
   },
 ];
