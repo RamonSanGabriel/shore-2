@@ -5,8 +5,8 @@ import css from './SocialMedia.module.css';
 
 const SocialMedia = () => {
   return (
-    <div>
-      <h2 className={css.title}>Social Media</h2>
+    <>
+      {/* <h2 className={css.title}>Social Media</h2> */}
       <ul className={css.socialsList}>
         {socialLinks.map(({ id, href, icon: Icon }) => (
           <li className={css.socialsListItem} key={id}>
@@ -21,7 +21,7 @@ const SocialMedia = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </>
   );
 };
 

@@ -7,7 +7,7 @@ const GalleryPage = () => {
       <Helmet>
         <title>Gallery</title>
       </Helmet>
-      <h1>Gallery Page</h1>
+      {/* <h1>Gallery Page</h1> */}
       <Gallery />
     </HelmetProvider>
   );

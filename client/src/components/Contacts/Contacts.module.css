@@ -1,19 +1,37 @@
 .contactsWrapper {
   width: 100%;
-  padding: 1rem;
+  /* padding: 1rem; */
   gap: 10px;
   /* background-color: var(--SECONDARY-COLOR); */
-  background-color: rgba(0, 118, 182, 0.122);
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  /* background-color: rgba(0, 118, 182, 0.122); */
+  /* display: grid; */
+  /* grid-template-columns: repeat(1, 1fr); */
 
   @media (width > 767px) {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  & h1 {
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
 }
 .contactsList {
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 1rem 0;
+  justify-content: flex-start;
   align-items: center;
+  gap: 1rem;
+
+  & li {
+    display: flex;
+    align-items: center;
+
+    @media (width > 767px) {
+      gap: 1rem;
+    }
+  }
 }
 .tel a {
   color: var(--PRIMARY-COLOR);

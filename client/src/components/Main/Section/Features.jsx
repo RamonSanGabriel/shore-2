@@ -10,8 +10,6 @@ const Features = () => {
   return (
     <section className={css.section}>
       <h2 className={css.title}>{title}</h2>
-      {/* <hr /> */}
-      {/* <p className={css.content}>{description}</p> */}
       <p className={css.featureList}>
         Property size: <span>{propertySize}</span>
       </p>

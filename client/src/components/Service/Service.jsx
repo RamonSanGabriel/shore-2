@@ -8,8 +8,8 @@ const Service = () => {
       <h1>{title}</h1>
       <hr />
       <p>{description}</p>
+      <h3>Unit Description: </h3>
       <ul className={css.serviceList}>
-        <h3>Unit Description: </h3>
         {unitDescription.map(({ id, unitDescription }) => (
           <div key={id}>
             <li className={css.serviceListItem}>

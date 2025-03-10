@@ -46,24 +46,27 @@ const Gallery = () => {
           nextSlide={nextSlide}
         />
       ) : (
-        <div className={css.galleryWrapper}>
-          <ul className={css.galleryList}>
-            {gallery &&
-              gallery.map(({ id, title, image, description }) => (
-                <div className={css.galleryListContainer} key={id}>
-                  <li className={css.galleryItems}>
-                    <h3 className={css.galleryTitle}>{title}</h3>
-                    <img
-                      src={image}
-                      alt={title}
-                      onClick={() => handleOpenModal(id)}
-                    />
-                    <p>{description}</p>
-                  </li>
-                </div>
-              ))}
-          </ul>
-        </div>
+        <>
+          <h1 className={css.galleryHeader}>Gallery </h1>
+          <div className={css.galleryWrapper}>
+            <ul className={css.galleryList}>
+              {gallery &&
+                gallery.map(({ id, title, image, description }) => (
+                  <div className={css.galleryListContainer} key={id}>
+                    <li className={css.galleryItems}>
+                      <h3 className={css.galleryTitle}>{title}</h3>
+                      <img
+                        src={image}
+                        alt={title}
+                        onClick={() => handleOpenModal(id)}
+                      />
+                      <p>{description}</p>
+                    </li>
+                  </div>
+                ))}
+            </ul>
+          </div>
+        </>
       )}
     </>
   );

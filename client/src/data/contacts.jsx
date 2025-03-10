@@ -5,7 +5,8 @@ export const contacts = [
   {
     id: 1,
     icon: FaPhoneAlt,
-    title: 'Phone',
+    message: 'Call us',
+    title: 'Mobile',
     href: (
       <a
         // style={{
@@ -22,6 +23,7 @@ export const contacts = [
   {
     id: 2,
     icon: FaShareAlt,
+    message: 'Send us a message',
     description: 'Social Profiles',
     child: <SocialMedia />,
   },

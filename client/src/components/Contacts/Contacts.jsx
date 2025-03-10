@@ -1,24 +1,29 @@
 import { Link } from 'react-router-dom';
 import { contacts } from '../../data/contacts';
 import css from './Contacts.module.css';
-import SocialMedia from '../SocialMedia/SocialMedia';
+// import SocialMedia from '../SocialMedia/SocialMedia';
+// import { FaPhone } from 'react-icons/fa6';
 
 const Contacts = () => {
   return (
     <>
-      <h1>Contacts Page</h1>
       <div className={css.contactsWrapper}>
+        <h1 className={css.contactsHeader}>Contacts us</h1>
+        <hr />
         <ul className={css.contactsList}>
-          {contacts.map(({ id, title, icon: Icon, href }) => (
+          {/* <FaPhone /> */}
+          {contacts.map(({ id, title, icon: Icon, href, child, message }) => (
             <li key={id}>
-              <h2>{title}</h2>
+              <p>{message}</p>
+              {<Icon />} {child}
+              {/* <h4>{title}</h4> */}
               <p className={css.tel}>{href}</p>
             </li>
           ))}
+          {/* <SocialMedia /> */}
         </ul>
-        <SocialMedia />
       </div>
-      {/* <div className={css.formWrapper}> */}
+      {/* <div> */}
       <form
         className={css.form}
         action="https://getform.io/f/akkypzma"
@@ -66,7 +71,6 @@ const Contacts = () => {
           </button>
         </div>
       </form>
-      {/* </div> */}
     </>
   );
 };
