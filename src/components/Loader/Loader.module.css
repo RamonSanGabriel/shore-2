@@ -5,3 +5,8 @@
   align-items: center;
   color: hsl(210, 100%, 56%);
 }
+.overide {
+  display: block;
+  margin: 0 auto;
+  border-color: red;
+}
