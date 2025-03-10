@@ -1,5 +1,5 @@
-import { navLinks } from '../../data/navLinks';
 import shoreLogo from '../../assets/Shore Residences Logo.avif';
+import { navLinks } from '../../data/nav-links';
 import css from './NavBar.module.css';
 import { NavLink } from 'react-router-dom';
 
