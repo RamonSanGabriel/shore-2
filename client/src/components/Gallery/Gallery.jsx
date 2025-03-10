@@ -8,7 +8,7 @@ const Gallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const { id, image } = gallery;
-  const { message } = galleryDescription;
+  const { message, content } = galleryDescription;
 
   const handleOpenModal = (id) => {
     setCurrentIndex(id - 1);
@@ -67,7 +67,8 @@ const Gallery = () => {
                 ))}
             </ul>
           </div>
-          <p>{message}</p>
+          <p className={css.galleryMessage}>{message}</p>
+          <p>{content}</p>
         </>
       )}
     </>

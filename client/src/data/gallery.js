@@ -81,4 +81,6 @@ export const gallery = [
 
 export const galleryDescription = {
   message: '(Click the image)',
+  content:
+    'These are the actual images of our unit in Shore 2 Residence Tower 1. ',
 };
