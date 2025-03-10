@@ -1,11 +1,11 @@
-import { Suspense } from 'react';
-import { Outlet } from 'react-router-dom';
+import React from 'react';
 import css from './SharedLayout.module.css';
 import { useEffect } from 'react';
-
 import Header from '../Header/Header';
-import Loader from '../Loader/Loader';
+import { Suspense } from 'react';
+import { Outlet } from 'react-router-dom';
 import MenuIcons from '../MenuIcons/MenuIcons';
+import Loader from '../Loader/Loader';
 
 const SharedLayout = () => {
   useEffect(() => {
