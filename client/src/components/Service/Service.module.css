@@ -15,12 +15,13 @@
 }
 
 .serviceList {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* flex-wrap: wrap; */
   text-align: left;
   list-style: disc;
-  /* list-style-position: inside; */
+  list-style-position: inside;
   margin: 0.5rem 0;
   padding: 0 0.5rem;
+}
+
+.serviceListItem {
+  color: #777777;
 }
