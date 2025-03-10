@@ -4,7 +4,9 @@ import SharedLayout from './components/SharedLayout/SharedLayout';
 import { lazy } from 'react';
 
 // Pages
+// const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
+// const AboutPage = lazy(() => import('./pages/AboutPage/AboutPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage/AboutPage'));
 // prettier-ignore
 const ServicesPage = lazy(() => import("./pages/ServicesPage/ServicesPage"));
@@ -14,18 +16,18 @@ const ContactsPage = lazy(() => import('./pages/ContactsPage/ContactsPage'));
 
 function App() {
   return (
-    <Routes>
-      {/* <div className={css.appWrapper}> */}
-      <Route path="/" element={<SharedLayout />}>
-        <Route index element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/services" element={<ServicesPage />} />
-        <Route path="/gallery" element={<GalleryPage />} />
-        <Route path="/contacts" element={<ContactsPage />} />
-        <Route path="*" element={<Navigate to="/" />} />
-      </Route>
-      {/* </div> */}
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/contacts" element={<ContactsPage />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 
