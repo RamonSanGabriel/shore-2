@@ -1,28 +1,32 @@
 import { Link } from 'react-router-dom';
-import { contacts } from '../../data/contacts';
+import { contacts, contactsHeader } from '../../data/contacts';
 import css from './Contacts.module.css';
 // import SocialMedia from '../SocialMedia/SocialMedia';
 // import { FaPhone } from 'react-icons/fa6';
 
 const Contacts = () => {
+  const { title, subtitle, content } = contactsHeader;
   return (
-    <>
-      <div className={css.contactsWrapper}>
-        <h1 className={css.contactsHeader}>Contacts us</h1>
-        <hr />
-        <ul className={css.contactsList}>
-          {/* <FaPhone /> */}
-          {contacts.map(({ id, title, icon: Icon, href, child, message }) => (
-            <li key={id}>
-              <p>{message}</p>
-              {<Icon />} {child}
-              {/* <h4>{title}</h4> */}
-              <p className={css.tel}>{href}</p>
-            </li>
-          ))}
-          {/* <SocialMedia /> */}
-        </ul>
-      </div>
+    // <>
+    <div className={css.contactsWrapper}>
+      <h1 className={css.contactsHeader}>{title}</h1>
+      <hr />
+      <ul className={css.contactsList}>
+        {/* <FaPhone /> */}
+        <div className={css.contactsContent}>
+          <h4>{subtitle}</h4>
+          <p>{content}</p>
+        </div>
+        {contacts.map(({ id, title, icon: Icon, href, child, message }) => (
+          <li key={id}>
+            <p>{message}:</p>
+            {<Icon />} {child}
+            {/* <h4>{title}</h4> */}
+            <p className={css.tel}>{href}</p>
+          </li>
+        ))}
+        {/* <SocialMedia /> */}
+      </ul>
       {/* <div> */}
       <form
         className={css.form}
@@ -62,7 +66,7 @@ const Contacts = () => {
               cols={6}
               type="text"
               name="message"
-              placeholder="We love to hear from you..."
+              placeholder="Send us a message..."
               required
             ></textarea>
           </label>
@@ -71,7 +75,9 @@ const Contacts = () => {
           </button>
         </div>
       </form>
-    </>
+    </div>
+
+    // </>
   );
 };
 

@@ -1,6 +1,11 @@
 import { FaPhoneAlt, FaShareAlt } from 'react-icons/fa';
 import SocialMedia from '../components/SocialMedia/SocialMedia';
 
+export const contactsHeader = {
+  title: 'Contact us',
+  subtitle: 'Feel free to reach out',
+  content: 'We love to hear from you soon.',
+};
 export const contacts = [
   {
     id: 1,

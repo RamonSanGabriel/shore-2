@@ -1,7 +1,7 @@
 export const service = {
   title: 'What we offer?',
   description:
-    'A 1-bedroom unit with balcony where you can experience the amazing view of the Manila Bay and amenity area.',
+    'Experience the breathtaking view of Manila Bay and the amenity area from this 1-bedroom unit with a balcony.',
 };
 
 export const unitDescription = [

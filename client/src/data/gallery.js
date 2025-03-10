@@ -78,3 +78,7 @@ export const gallery = [
     description: 'Image description',
   }, */
 ];
+
+export const galleryDescription = {
+  message: '(Click the image)',
+};

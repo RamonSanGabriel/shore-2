@@ -1,11 +1,9 @@
 .contactsWrapper {
   width: 100%;
-  /* padding: 1rem; */
+  max-width: 1024px;
   gap: 10px;
   /* background-color: var(--SECONDARY-COLOR); */
   /* background-color: rgba(0, 118, 182, 0.122); */
-  /* display: grid; */
-  /* grid-template-columns: repeat(1, 1fr); */
 
   @media (width > 767px) {
     grid-template-columns: repeat(2, 1fr);
@@ -27,11 +25,14 @@
   & li {
     display: flex;
     align-items: center;
+    gap: 5px;
 
     @media (width > 767px) {
-      gap: 1rem;
     }
   }
+}
+.contactsContent {
+  text-align: left;
 }
 .tel a {
   color: var(--PRIMARY-COLOR);
@@ -75,7 +76,7 @@
   }
 
   @media (width > 1023px) {
-    padding: 0 4.5rem;
+    padding: 0 3rem;
     text-align: left;
   }
 }
