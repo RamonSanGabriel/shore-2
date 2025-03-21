@@ -38,11 +38,7 @@ const Gallery = () => {
       {openModal ? (
         <Modal
           onClose={handleModalClose}
-          id={id}
-          image={image}
           currentIndex={currentIndex}
-          setOpenModal={handleOpenModal}
-          setCurrentIndex={setCurrentIndex}
           prevSlide={prevSlide}
           nextSlide={nextSlide}
         />
